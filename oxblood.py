@@ -33,7 +33,7 @@ intents.bans = True
 bot = discord.Client(intents=intents)
 EMBED_COLOR = 0x8B0000
 app = Flask(__name__)
-CATEGORY_ID = 1463192366436581570
+CATEGORY_ID = 1463187760398467154
 ROLE_ID = 1476792990927159326
 YOUR_GUILD_ID = 1463187758851031167
 victim_channels = {}
