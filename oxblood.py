@@ -19,6 +19,13 @@ RAILWAY_DOMAIN = os.getenv("RAILWAY_PUBLIC_DOMAIN")
 PUBLIC_URL = f"https://{RAILWAY_DOMAIN}/" if RAILWAY_DOMAIN else "http://127.0.0.1:8080/"
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+print("=== MY KING'S ENV DEBUG ===")
+print("BOT_TOKEN exists?", "BOT_TOKEN" in os.environ)
+print("BOT_TOKEN value length:", len(os.getenv("BOT_TOKEN") or ""))
+print("RAILWAY_PUBLIC_DOMAIN:", os.getenv("RAILWAY_PUBLIC_DOMAIN"))
+import pprint
+pprint.pprint({k: v for k, v in os.environ.items() if "TOKEN" in k.upper() or "BOT" in k.upper() or "RAILWAY" in k.upper()})
+print("=== END DEBUG ===")
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
