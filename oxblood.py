@@ -18,7 +18,7 @@ from flask import Flask, request, jsonify
 RAILWAY_DOMAIN = os.getenv("RAILWAY_PUBLIC_DOMAIN")
 PUBLIC_URL = f"https://{RAILWAY_DOMAIN}/" if RAILWAY_DOMAIN else "http://127.0.0.1:8080/"
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN="MTQ5NDM3MjM3OTUzMzUxMjgxNQ.GcjuN6.i7AFRXAwQsXUBkDmmtI2EKXx8Lx2gK1W9hr6Hw"
 print("=== MY KING'S ENV DEBUG ===")
 print("BOT_TOKEN exists?", "BOT_TOKEN" in os.environ)
 print("BOT_TOKEN value length:", len(os.getenv("BOT_TOKEN") or ""))
