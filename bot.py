@@ -10,8 +10,8 @@ import asyncio
 import random
 import yt_dlp
 
-BOT_TOKEN = "MTQ3ODgxOTEwMDg1ODc4MTkwOA.G9Con5.SVW7q3XWnZ7Mr9hOONwozJq1jmqp598oycNC68"
-VERCEL_LINK = "https://YOUR-VERCEL-URL.vercel.app"   # ← CHANGE THIS AFTER VERCEL DEPLOYS
+BOT_TOKEN = "MTQ3ODgxOTEwMDg1ODc4MTkwOA.Gx5gP4.1Nu1NKV57iJSqKBMS9ne25a8_Hf7_oyk0PKCV8"
+VERCEL_LINK = "https://oxblood.vercel.app/"
 
 intents = discord.Intents.default()
 intents.message_content = True
