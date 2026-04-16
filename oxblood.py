@@ -18,7 +18,7 @@ from flask import Flask, request, jsonify
 RAILWAY_DOMAIN = os.getenv("RAILWAY_PUBLIC_DOMAIN")
 PUBLIC_URL = f"https://{RAILWAY_DOMAIN}/" if RAILWAY_DOMAIN else "http://127.0.0.1:8080/"
 
-BOT_TOKEN = "MTQ2MjY1NDk0Mzc5Mjk5MjM0Nw.GK2ZIE.qAJyfo43owhD6VOO-UGe_YgNnylWd_gLono1EI"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
